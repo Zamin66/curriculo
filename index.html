@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Currículo </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  
+
+
+    <!-- Tollbar Acessibilidade -->
+    
+    <div class="toolbar">
+    <button onclick="mudarTamanhoFonte(1)">A+</button>
+    <button onclick="mudarTamanhoFonte(-1)">A-</button>
+	<button onclick="toggleContrast()">Contraste</button>
+    <button onclick="lerTexto()">🔊 Ler Página</button>
+    <button onclick="resetAcessibilidade()">Resetar</button>
+  </div>
+    <br>
+
+    <!-- Libras -->
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+    <hr>
+
+    <!-- Cabeçalho do meu site -->
+    <header>
+        <nav class="menu">
+            <div class="celular"> &#9776 </div>
+            <ul>
+               <img src= "ourobranco.png" alt="" class="logo"> 
+                <li> <a href="#inicio"> Informações Pessoais </a> </li>
+                <li> <a href="#endereco"> Endereço </a> </li>
+                <li> <a href="#experiencia"> Experiências  </a> </li>
+                <li> <a href="#formacao"> Formação </a> </li>
+                <li> <a href="#contato"> Contato </a> </li>
+               <img src= "ourobranco.png" alt="" class="logo"> 
+
+                
+
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+    <section id="inicio">
+        <h2> Franchesco Zamin </h2>
+        <p> Desenvolvedor em formação </p>
+        <hr>
+        <h1 class="titulo"> <b>  Site cúrriculo </b> </h1>
+
+        <img id="perfil" src="pimentinha.jpg">
+        <img id="perfil" src="pimentinha2.jpg">
+        <img id="perfil" src="pimentinha3.jpg">
+        
+
+        <!-- <video id= "video" controls autoplay muted loop> 
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video> -->
+        <br>
+    </section>
+
+    <section id="endereco"> 
+        <h3 class="titulo"> Informações Pessoais</h3>
+        <ul class="informacoes">
+            <li> • Telefone: 0800 777 7000</li>
+            <li> • Email: atendimento@ourobranco.com </li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h3 class="titulo"> Endereço </h3>
+        <ul class="informacoes">
+            <li> • Rua da Ilusão  n.º 48 </li>
+            
+        </ul>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1747351940607!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDEwS216eHdF!2m2!1d28.37718572993218!2d-81.57074001664238!3f4.672177586684907!4f26.076572370804712!5f1.0294232383012214" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br><br><br>
+
+    </section>
+
+     <section id="experiencia">
+
+        <h3 class="titulo"> Experiências </h3>
+        <ul class="informacoes">
+            <li> • Supermercado Para Todos, ajudante geral, por volta de 1 ano. </li>
+            <li> • Móveis Romera, jovem aprendiz SENAC, por volta de 1 ano. </li>
+            <li> • Pref. de Nova Londrina, office-boy na área de departamento pessoal, por volta de 2,5 anos. </li>
+            <li> • Alimentos Lopes, aux. de faturamento por volta de 1 ano e administrativo até a presente data. </li>
+        </ul>
+
+    </section>
+
+
+
+    <section id="formacao">
+
+        <h3 class="titulo"> Formação </h3>
+        <ul class="informacoes">
+            <li> • Colégio Estadual Ary João Dresch. </li>
+            <li> • Informatica - CDI Profissionalizante. </li>
+            <li> • UNESPAR - Ciências Contábeis. </li>
+            <li> • SENAC - Excel Avançado.  </li>
+            <li> • SENAC - Técnico em Informática - Em andamento.  </li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="contato">
+        <h3 class="titulo"> Redes Sociais </h3>
+        <ul class="informacoes">
+            <li> <a target="_blank" href="https://steamcommunity.com/id/ayoaguezamin"> <i class="fa-brands fa-steam"></i>Steam </a> 
+            <li> <a target="_blank" href="https://www.nerdmaldito.com"> <i class="fa-solid fa-blog"></i> Blog </a> </li>
+            <li> <a target="_blank" href="https://www.whatsapp.com"> <i class="fa-brands fa-whatsapp"></i> WhatsApp </a> <li>
+            <li> <a href="sobre.html"> <i class="fa-solid fa-circle-user"></i> Sobre </a> </li>
+
+
+        </ul>
+
+
+    </section>
+
+    <footer class="rodape">
+        <p> © 2025 Franchesco Zamin </p>
+        <cite> Todos os direitos reservados </cite>
+        <br>
+        <progress></progress>
+
+    </footer>
+
+    </main>
+    
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body {
+    /*altera a cor de fundo*/
+    background-color: rgba(252, 253, 252, 0.507);
+    text-align:center;
+    background-size: 1980px;
+    font-family: "Bangers", system-ui; color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 2px 2px rgb(245, 190, 10);
+
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.322); 
+    width: 900px;
+    margin: auto;
+    border-radius: 30px;
+    /*espaçamento interno*/
+    padding: 30px;
+    /*espaçamento externo*/
+    margin-top: 30px;   
+    /*sombra*/
+    box-shadow: 2px 3px 5px;
+    animation: animacao 10s alternate infinite;
+}  
+
+
+
+.high-contrast {
+      background-color: black !important;
+      color: yellow !important;
+    }
+    .grayscale {
+      filter: grayscale(100%) !important;
+    }
+    .daltonismo {
+      filter: hue-rotate(90deg);
+    }
+
+#inicio {
+    background-color: rgba(255, 255, 255, 0.24); 
+    width: 1000px;
+    margin: auto;
+    border-radius: 30px;
+    /*espaçamento interno*/
+    padding: 30px;
+    /*espaçamento externo*/
+    margin-top: 30px;   
+    /*sombra*/
+    box-shadow: 2px 3px 5px white;
+
+}   
+
+.titulo{
+    color:rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(245, 190, 10);
+
+}
+
+#perfil{
+    border-radius: 20px;
+    width: 320px;
+    border: 3px solid ;
+    box-shadow: 2px 3px 15px
+
+}
+.informacoes{
+    list-style: none;
+    text-align:justify
+}
+
+#video{
+    border-radius: 20px;
+    width: 425px;
+    border: 3px solid rgb(245, 190, 10);
+    box-shadow: 2px 3px 15px
+
+
+}
+/*  animação zoom
+
+section:hover{
+    background-color:rgba(255, 192, 203, 0.575);
+    transition: 2s;
+    font-size: 35px;
+
+}*/
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.356);  /* cor de fundo do menu  */
+    border-radius: 15px; /* arredondar bordas do menu */
+    
+}
+.menu ul li{
+    display: inline-block; /* colocar opções da lista do menu lado a lado */
+    padding: 20px;   /* espaçamento interno */
+    width: 200px;    /* largura do botão do menu */
+
+}
+.menu ul li a {
+    color:black; /* color:black;  */
+    text-decoration: none; /* decoração de link desativa */
+}
+
+.logo {
+    border-radius: 100px;
+    width: 35px;
+    margin-top:20px;
+
+}
+
+.rodape{
+    background-color: rgba(0, 0, 0, 0.281);
+    color:rgb(0, 0, 0);
+    margin-top: 40px;
+    padding-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:white; text-shadow: none;
+    
+
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+
+    
+
+}
+
+#redes ul li a{
+    color:black;  /* cor da letra */
+    text-decoration: none; /* decoração do texto */
+
+}
+.celular{
+    /*desaparece o icone menu na versão desktop*/
+    display: none;
+
+}
+    /*definido  configuração do modo celular */
+@media(max-width: 1050px){
+    .menu ul { 
+        display: none;  /*desaparece lista do menu*/
+    }
+    .celular{
+        display: block; /*aparece menu hamburguer do celular*/
+        text-align: left;
+        padding: 8px;
+        color:white;
+        text-shadow: none;
+    
+    }
+
+    ul.mostraMenu{
+        display: inline-block;
+    }
+    }
+
+    .toolbar {
+        /* text-align: left; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #eee;
+      padding: 10px;
+      z-index: 999;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; 
+    }    
+
+    
+
+
